@@ -1,0 +1,26 @@
+{
+  "name": "stylelint-config-silverwind",
+  "version": "0.1.0",
+  "description": "Personal stylelint configuration",
+  "author": "silverwind <me@silverwind.io>",
+  "repository": "silverwind/stylelint-config-silverwind",
+  "license": "BSD-2-Clause",
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "js-yaml": "^3.12.0",
+    "updates": "^4.3.0",
+    "ver": "^2.0.1"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "silverwind"
+  ]
+}
