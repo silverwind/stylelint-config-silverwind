@@ -1,41 +1,32 @@
-.PHONY: lint
 lint:
 	npx eslint --ignore-pattern *.min.js *.js
 
-.PHONY: build
-build:
-	node build.js
-	git diff --quiet || git commit -am "rebuild"
-
-.PHONY: publish
 publish:
 	if git ls-remote --exit-code origin &>/dev/null; then git push -u -f --tags origin master; fi
 	npm publish
 	npm i -g .
 
-.PHONY: update
-update:
-	npx updates -u
+deps:
 	rm -rf node_modules
-	npm i --no-package-lock
+	npm i
 
-.PHONY: patch
+update:
+	npx updates -cu
+	$(MAKE) deps
+
 patch:
 	$(MAKE) lint
-	$(MAKE) build
-	npx ver patch
+	npx ver -c 'node build.js' patch
 	$(MAKE) publish
 
-.PHONY: minor
 minor:
 	$(MAKE) lint
-	$(MAKE) build
-	npx ver minor
+	npx ver -c 'node build.js' minor
 	$(MAKE) publish
 
-.PHONY: major
 major:
 	$(MAKE) lint
-	$(MAKE) build
-	npx ver major
+	npx ver -c 'node build.js' major
 	$(MAKE) publish
+
+.PHONY: lint publish update patch minor major
