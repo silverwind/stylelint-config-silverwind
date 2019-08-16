@@ -1,6 +1,9 @@
 plugins:
   - stylelint-csstree-validator
 
+ignoreFiles:
+  - "**/*.min.css"
+
 rules:
   csstree/validator: true
   block-no-empty: true
