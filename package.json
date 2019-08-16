@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-silverwind",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Personal stylelint configuration",
   "author": "silverwind <me@silverwind.io>",
   "repository": "silverwind/stylelint-config-silverwind",
@@ -13,10 +13,10 @@
     "node": ">=8"
   },
   "devDependencies": {
-    "eslint": "6.0.1",
-    "eslint-config-silverwind": "4.0.2",
+    "eslint": "6.1.0",
+    "eslint-config-silverwind": "4.0.3",
     "js-yaml": "3.13.1",
-    "updates": "8.5.0",
+    "updates": "8.5.1",
     "ver": "5.1.2"
   },
   "keywords": [
