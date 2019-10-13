@@ -1,6 +1,9 @@
 lint:
 	npx eslint --ignore-pattern *.min.js *.js
 
+test:
+	$(MAKE) lint
+
 publish:
 	if git ls-remote --exit-code origin &>/dev/null; then git push -u -f --tags origin master; fi
 	npm publish
@@ -29,4 +32,4 @@ major:
 	npx ver -c 'node build.js' major
 	$(MAKE) publish
 
-.PHONY: lint publish update patch minor major
+.PHONY: lint test publish update patch minor major

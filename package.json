@@ -6,6 +6,9 @@
   "repository": "silverwind/stylelint-config-silverwind",
   "license": "BSD-2-Clause",
   "main": "index.json",
+  "scripts": {
+    "test": "make test"
+  },
   "files": [
     "index.json"
   ],
@@ -13,11 +16,11 @@
     "node": ">=8"
   },
   "devDependencies": {
-    "eslint": "6.1.0",
-    "eslint-config-silverwind": "4.0.3",
+    "eslint": "6.5.1",
+    "eslint-config-silverwind": "4.2.2",
     "js-yaml": "3.13.1",
-    "updates": "8.5.1",
-    "ver": "5.1.2"
+    "updates": "9.0.0",
+    "ver": "5.2.0"
   },
   "keywords": [
     "stylelint",
@@ -25,6 +28,6 @@
     "silverwind"
   ],
   "dependencies": {
-    "stylelint-csstree-validator": "1.5.2"
+    "stylelint-csstree-validator": "1.6.1"
   }
 }
