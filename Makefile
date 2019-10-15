@@ -19,17 +19,17 @@ update:
 
 patch:
 	$(MAKE) lint
-	npx ver -c 'node build.js' patch
+	npx ver -Cc 'node build.js' patch
 	$(MAKE) publish
 
 minor:
 	$(MAKE) lint
-	npx ver -c 'node build.js' minor
+	npx ver -Cc 'node build.js' minor
 	$(MAKE) publish
 
 major:
 	$(MAKE) lint
-	npx ver -c 'node build.js' major
+	npx ver -Cc 'node build.js' major
 	$(MAKE) publish
 
 .PHONY: lint test publish update patch minor major
