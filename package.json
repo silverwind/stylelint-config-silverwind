@@ -15,6 +15,9 @@
   "engines": {
     "node": ">=8"
   },
+  "dependencies": {
+    "stylelint-csstree-validator": "*"
+  },
   "devDependencies": {
     "eslint": "6.5.1",
     "eslint-config-silverwind": "4.2.2",
@@ -26,8 +29,5 @@
     "stylelint",
     "stylelint-config",
     "silverwind"
-  ],
-  "dependencies": {
-    "stylelint-csstree-validator": "1.6.1"
-  }
+  ]
 }
