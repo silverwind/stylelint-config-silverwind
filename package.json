@@ -19,11 +19,11 @@
     "stylelint-csstree-validator": "*"
   },
   "devDependencies": {
-    "eslint": "6.5.1",
-    "eslint-config-silverwind": "4.2.3",
+    "eslint": "6.7.2",
+    "eslint-config-silverwind": "5.0.2",
     "js-yaml": "3.13.1",
-    "updates": "9.0.0",
-    "ver": "5.4.3"
+    "updates": "9.1.0",
+    "versions": "7.0.3"
   },
   "keywords": [
     "stylelint",
