@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 "use strict";
 
-const jsYaml = require("js-yaml");
-const fs = require("fs");
-const path = require("path");
+const {join} = require("path");
+const {load} = require("js-yaml");
+const {readFileSync, writeFileSync} = require("fs");
 
-const input = path.join(__dirname, ".stylelintrc");
-const output = path.join(__dirname, "index.json");
+const input = join(__dirname, ".stylelintrc");
+const output = join(__dirname, "index.json");
 
-fs.writeFileSync(output, JSON.stringify(jsYaml.safeLoad(fs.readFileSync(input, "utf8"))));
+writeFileSync(output, JSON.stringify(load(readFileSync(input, "utf8")), null, 2));
