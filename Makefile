@@ -1,35 +1,32 @@
-lint:
-	npx eslint --ignore-pattern *.min.js *.js
+node_modules: yarn.lock
+	@yarn -s --pure-lockfile
+	@touch node_modules
 
-test:
-	$(MAKE) lint
+deps: node_modules
 
-publish:
+test: node_modules
+	node build.js
+	yarn -s run eslint .
+
+publish: node_modules
 	if git ls-remote --exit-code origin &>/dev/null; then git push -u -f --tags origin master; fi
 	npm publish
-	npm i -g .
 
-deps:
-	rm -rf node_modules
-	npm i
+update: node_modules
+	yarn -s run  updates -cu
+	@touch yarn.lock
+	@$(MAKE) --no-print-directory deps
 
-update:
-	npx updates -cu
-	$(MAKE) deps
+patch: node_modules test
+	yarn -s run versions -Cac 'node build.js' patch
+	$(MAKE) --no-print-directory publish
 
-patch:
-	$(MAKE) lint
-	npx versions -Cc 'node build.js' patch
-	$(MAKE) publish
+minor: node_modules test
+	yarn -s run versions -Cac 'node build.js' minor
+	$(MAKE) --no-print-directory publish
 
-minor:
-	$(MAKE) lint
-	npx versions -Cc 'node build.js' minor
-	$(MAKE) publish
+major: node_modules test
+	yarn -s run versions -Cac 'node build.js' major
+	$(MAKE) --no-print-directory publish
 
-major:
-	$(MAKE) lint
-	npx versions -Cc 'node build.js' major
-	$(MAKE) publish
-
-.PHONY: lint test publish update patch minor major
+.PHONY: test publish deps update patch minor major
