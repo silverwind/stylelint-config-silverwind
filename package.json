@@ -6,7 +6,6 @@
   "repository": "silverwind/stylelint-config-silverwind",
   "license": "BSD-2-Clause",
   "main": "index.json",
-  "type": "module",
   "scripts": {
     "test": "make test"
   },
