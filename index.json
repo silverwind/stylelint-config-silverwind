@@ -17,6 +17,7 @@
     "color-no-invalid-hex": true,
     "comment-empty-line-before": null,
     "comment-no-empty": true,
+    "comment-whitespace-inside": null,
     "csstree/validator": true,
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": null,
