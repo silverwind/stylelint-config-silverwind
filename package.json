@@ -16,16 +16,15 @@
     "node": ">=12"
   },
   "dependencies": {
-    "stylelint-config-standard": "^22.0.0",
-    "stylelint-csstree-validator": "*"
+    "stylelint-config-standard": "^24.0.0"
   },
   "devDependencies": {
-    "eslint": "7.25.0",
-    "eslint-config-silverwind": "32.3.4",
+    "eslint": "8.3.0",
+    "eslint-config-silverwind": "46.1.0",
     "js-yaml": "4.1.0",
-    "stylelint": "13.13.1",
-    "updates": "12.1.0",
-    "versions": "8.4.7"
+    "stylelint": "14.1.0",
+    "updates": "12.2.2",
+    "versions": "9.1.0"
   },
   "keywords": [
     "stylelint",
