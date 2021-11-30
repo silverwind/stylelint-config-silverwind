@@ -3,6 +3,10 @@ extends: stylelint-config-standard
 ignoreFiles:
   - "**/*.min.css"
 
+overrides:
+  - files: ["**/*.html"]
+    customSyntax: postcss-html
+
 rules:
   alpha-value-notation: null
   at-rule-empty-line-before: null
@@ -18,6 +22,7 @@ rules:
   comment-empty-line-before: null
   comment-no-empty: true
   comment-whitespace-inside: null
+  custom-property-empty-line-before: null
   declaration-bang-space-after: never
   declaration-bang-space-before: null
   declaration-block-no-duplicate-custom-properties: true
@@ -32,6 +37,7 @@ rules:
   declaration-empty-line-before: null
   font-family-name-quotes: always-where-recommended
   function-calc-no-unspaced-operator: true
+  function-comma-space-after: null
   function-comma-space-before: null
   function-linear-gradient-no-nonstandard-direction: true
   function-max-empty-lines: 0
@@ -55,7 +61,7 @@ rules:
   no-missing-end-of-source-newline: true
   number-leading-zero: never
   number-max-precision: null
-  number-no-trailing-zeros: true
+  number-no-trailing-zeros: null
   property-case: lower
   property-no-unknown: true
   property-no-vendor-prefix: null
@@ -79,5 +85,6 @@ rules:
   string-quotes: double
   unit-case: lower
   unit-no-unknown: true
+  value-list-comma-space-after: null
   value-list-max-empty-lines: 0
   value-no-vendor-prefix: null
