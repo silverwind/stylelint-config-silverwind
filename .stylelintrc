@@ -53,6 +53,7 @@ rules:
   media-feature-range-operator-space-after: always
   media-feature-range-operator-space-before: always
   no-descending-specificity: null
+  no-duplicate-selectors: null
   no-empty-source: true
   no-eol-whitespace: true
   no-extra-semicolons: true
