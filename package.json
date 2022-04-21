@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-silverwind",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "description": "Personal stylelint configuration",
   "author": "silverwind <me@silverwind.io>",
   "repository": "silverwind/stylelint-config-silverwind",

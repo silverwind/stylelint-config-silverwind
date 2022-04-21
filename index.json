@@ -14,6 +14,7 @@
   "rules": {
     "alpha-value-notation": null,
     "at-rule-empty-line-before": null,
+    "at-rule-name-space-after": null,
     "block-closing-brace-empty-line-before": null,
     "block-closing-brace-space-before": null,
     "block-no-empty": true,
