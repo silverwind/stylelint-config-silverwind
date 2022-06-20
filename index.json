@@ -33,6 +33,7 @@
     "declaration-block-no-duplicate-custom-properties": true,
     "declaration-block-no-duplicate-properties": true,
     "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-block-no-shorthand-property-overrides": null,
     "declaration-block-semicolon-newline-after": null,
     "declaration-block-semicolon-space-before": "never",
     "declaration-block-single-line-max-declarations": null,
