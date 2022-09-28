@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 "use strict";
 
-const {join} = require("path");
-const {load} = require("js-yaml");
-const {readFileSync, writeFileSync} = require("fs");
+import {load} from "js-yaml";
+import {readFileSync, writeFileSync} from "fs";
 
-const input = join(__dirname, ".stylelintrc");
-const output = join(__dirname, "index.json");
-
-writeFileSync(output, JSON.stringify(load(readFileSync(input, "utf8")), null, 2));
+const input = new URL(".stylelintrc.yaml", import.meta.url);
+const output = new URL("index.json", import.meta.url);
+writeFileSync(output, JSON.stringify(load(readFileSync(input, "utf8"))));

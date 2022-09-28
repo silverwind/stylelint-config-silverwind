@@ -6,14 +6,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: ['12', '14', '16']
+        os: [ubuntu-latest]
+        node: ['14', '16']
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: ${{matrix.node}}
-      - run: yarn -s
-      - run: yarn -s test
+          node-version: ${{ matrix.node }}
+      - run: make deps
+      - run: make test
 
