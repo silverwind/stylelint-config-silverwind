@@ -1,6 +1,3 @@
-#!/usr/bin/env node
-"use strict";
-
 import {load} from "js-yaml";
 import {readFileSync, writeFileSync} from "fs";
 
