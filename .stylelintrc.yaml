@@ -47,6 +47,7 @@ rules:
   function-parentheses-newline-inside: never-multi-line
   function-url-quotes: always
   hue-degree-notation: null
+  import-notation: null
   indentation: 2
   length-zero-no-unit: true
   max-empty-lines: 1
