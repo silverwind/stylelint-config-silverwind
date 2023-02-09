@@ -1,6 +1,9 @@
 ignoreFiles:
   - "**/*.min.css"
 
+plugins:
+  - stylelint-declaration-strict-value
+
 overrides:
   - files: ["**/*.html"]
     customSyntax: postcss-html
@@ -70,6 +73,7 @@ rules:
   selector-pseudo-element-no-unknown: true
   selector-type-case: lower
   selector-type-no-unknown: [true, {ignore: [custom-elements]}]
+  scale-unlimited/declaration-strict-value: [color, {ignoreValues: /^(inherit|transparent|unset|initial)$/}]
   shorthand-property-no-redundant-values: true
   string-no-newline: true
   string-quotes: double
