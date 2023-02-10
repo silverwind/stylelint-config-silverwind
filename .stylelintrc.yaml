@@ -44,9 +44,7 @@ rules:
   media-feature-range-operator-space-after: always
   media-feature-range-operator-space-before: always
   named-grid-areas-no-invalid: true
-  no-descending-specificity: true
   no-duplicate-at-import-rules: true
-  no-duplicate-selectors: true
   no-empty-source: true
   no-eol-whitespace: true
   no-extra-semicolons: true
@@ -58,13 +56,11 @@ rules:
   property-case: lower
   property-no-unknown: true
   property-no-vendor-prefix: true
-  rule-empty-line-before: [always-multi-line, {except: [first-nested], ignore: [after-comment]}]
   selector-attribute-quotes: always
   selector-list-comma-space-after: always-single-line
   selector-list-comma-space-before: never-single-line
   selector-max-empty-lines: 0
   selector-no-vendor-prefix: true
-  selector-not-notation: complex
   selector-pseudo-class-case: lower
   selector-pseudo-class-no-unknown: true
   selector-pseudo-class-parentheses-space-inside: never
