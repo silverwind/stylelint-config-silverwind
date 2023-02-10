@@ -55,7 +55,6 @@ rules:
   number-leading-zero: never
   property-case: lower
   property-no-unknown: true
-  property-no-vendor-prefix: true
   selector-attribute-quotes: always
   selector-list-comma-space-after: always-single-line
   selector-list-comma-space-before: never-single-line
@@ -65,11 +64,10 @@ rules:
   selector-pseudo-class-no-unknown: true
   selector-pseudo-class-parentheses-space-inside: never
   selector-pseudo-element-case: lower
-  selector-pseudo-element-colon-notation: double
   selector-pseudo-element-no-unknown: true
   selector-type-case: lower
   selector-type-no-unknown: [true, {ignore: [custom-elements]}]
-  scale-unlimited/declaration-strict-value: [color, {ignoreValues: /^(inherit|transparent|unset|initial)$/}]
+  scale-unlimited/declaration-strict-value: [color, {ignoreValues: /^(inherit|transparent|unset|initial|currentcolor)$/}]
   shorthand-property-no-redundant-values: true
   string-no-newline: true
   string-quotes: double
