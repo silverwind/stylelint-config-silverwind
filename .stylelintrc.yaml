@@ -41,7 +41,7 @@ rules:
   selector-attribute-quotes: always
   selector-no-vendor-prefix: true
   selector-pseudo-class-no-unknown: true
-  selector-pseudo-element-colon-notation: null # todo: double
+  selector-pseudo-element-colon-notation: double
   selector-pseudo-element-no-unknown: true
   selector-type-case: lower
   selector-type-no-unknown: [true, {ignore: [custom-elements]}]
