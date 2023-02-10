@@ -1,6 +1,3 @@
-ignoreFiles:
-  - "**/*.min.css"
-
 plugins:
   - stylelint-declaration-strict-value
 
