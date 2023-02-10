@@ -37,7 +37,7 @@ rules:
   no-invalid-position-at-import-rule: true
   no-irregular-whitespace: true
   property-no-unknown: true
-  scale-unlimited/declaration-strict-value: [color, {ignoreValues: /^(inherit|transparent|unset|initial|currentcolor)$/, disableFix: true}]
+  scale-unlimited/declaration-strict-value: [color, {ignoreValues: /^(inherit|transparent|unset|initial|currentcolor)$/, disableFix: true}] # disableFix to avoid warning 'No `autoFix` function provided' when running with --fix
   selector-attribute-quotes: always
   selector-no-vendor-prefix: true
   selector-pseudo-class-no-unknown: true
