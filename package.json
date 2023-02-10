@@ -1,7 +1,7 @@
 {
   "name": "stylelint-config-silverwind",
   "version": "10.0.4",
-  "description": "Personal stylelint configuration",
+  "description": "Extensive stylelint configuration",
   "author": "silverwind <me@silverwind.io>",
   "repository": "silverwind/stylelint-config-silverwind",
   "license": "BSD-2-Clause",
@@ -12,7 +12,7 @@
     "index.json"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "dependencies": {
     "postcss-html": "1.5.0",
