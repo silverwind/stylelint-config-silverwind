@@ -81,6 +81,7 @@ rules:
   no-invalid-position-at-import-rule: true
   no-irregular-whitespace: true
   no-unknown-animations: null
+  no-unknown-custom-properties: null
   number-max-precision: null
   property-allowed-list: null
   property-disallowed-list: null
