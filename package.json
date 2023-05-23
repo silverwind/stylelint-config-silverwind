@@ -17,14 +17,14 @@
   "dependencies": {
     "postcss-html": "1.5.0",
     "stylelint-declaration-strict-value": "1.9.2",
-    "stylelint-stylistic": "0.4.0"
+    "stylelint-stylistic": "0.4.2"
   },
   "devDependencies": {
-    "eslint": "8.39.0",
-    "eslint-config-silverwind": "65.1.6",
+    "eslint": "8.41.0",
+    "eslint-config-silverwind": "73.0.0",
     "js-yaml": "4.1.0",
-    "stylelint": "15.6.0",
-    "updates": "14.0.1",
+    "stylelint": "15.6.2",
+    "updates": "14.1.0",
     "versions": "11.0.0"
   },
   "keywords": [
