@@ -24,6 +24,7 @@
     "eslint-config-silverwind": "73.0.0",
     "js-yaml": "4.1.0",
     "stylelint": "15.6.2",
+    "stylelint-declaration-block-no-ignored-properties": "2.7.0",
     "updates": "14.1.0",
     "versions": "11.0.0"
   },
