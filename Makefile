@@ -12,6 +12,7 @@ build: node_modules
 .PHONY: test
 test: node_modules build
 	npx eslint .
+	npx stylelint test.css
 
 .PHONY: publish
 publish: node_modules

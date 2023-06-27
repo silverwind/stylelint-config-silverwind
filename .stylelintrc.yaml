@@ -40,7 +40,7 @@ rules:
   declaration-empty-line-before: null
   declaration-no-important: null
   declaration-property-max-values: null
-  declaration-property-unit-allowed-list: [true, {line-height: []}]
+  declaration-property-unit-allowed-list: {line-height: []}
   declaration-property-unit-disallowed-list: null
   declaration-property-value-allowed-list: null
   declaration-property-value-disallowed-list: null
