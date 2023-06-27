@@ -22,10 +22,10 @@
   },
   "devDependencies": {
     "eslint": "8.43.0",
-    "eslint-config-silverwind": "73.0.2",
+    "eslint-config-silverwind": "73.0.4",
     "js-yaml": "4.1.0",
-    "stylelint": "15.8.0",
-    "updates": "14.2.4",
+    "stylelint": "15.9.0",
+    "updates": "14.2.8",
     "versions": "11.0.1"
   },
   "keywords": [
