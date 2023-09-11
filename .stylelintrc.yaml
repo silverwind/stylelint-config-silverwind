@@ -142,7 +142,7 @@ rules:
   stylistic/block-opening-brace-newline-before: null
   stylistic/block-opening-brace-space-after: null
   stylistic/block-opening-brace-space-before: null
-  stylistic/color-hex-case: lower
+  stylistic/color-hex-case: null
   stylistic/declaration-bang-space-after: never
   stylistic/declaration-bang-space-before: null
   stylistic/declaration-block-semicolon-newline-after: null
