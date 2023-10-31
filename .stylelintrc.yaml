@@ -7,6 +7,11 @@ overrides:
   - files: ["**/*.html"]
     customSyntax: postcss-html
 
+ignoreFiles:
+  - "dist/**"
+  - "build/**"
+  - "node_modules/**"
+
 rules:
   alpha-value-notation: null
   annotation-no-unknown: true
