@@ -18,12 +18,12 @@
     "stylelint-stylistic": "0.4.3"
   },
   "devDependencies": {
-    "eslint": "8.51.0",
-    "eslint-config-silverwind": "76.0.4",
+    "eslint": "8.52.0",
+    "eslint-config-silverwind": "79.1.0",
     "js-yaml": "4.1.0",
-    "stylelint": "15.10.3",
-    "updates": "15.0.2",
-    "versions": "11.1.0"
+    "stylelint": "15.11.0",
+    "updates": "15.0.3",
+    "versions": "12.0.0"
   },
   "keywords": [
     "stylelint",
