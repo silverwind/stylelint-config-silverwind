@@ -12,18 +12,18 @@
     "index.json"
   ],
   "dependencies": {
-    "@stylistic/stylelint-plugin": "2.0.0",
+    "@stylistic/stylelint-plugin": "2.1.0",
     "postcss-html": "1.6.0",
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
     "stylelint-declaration-strict-value": "1.10.4"
   },
   "devDependencies": {
-    "eslint": "8.56.0",
-    "eslint-config-silverwind": "79.4.0",
+    "eslint": "8.57.0",
+    "eslint-config-silverwind": "80.0.4",
     "js-yaml": "4.1.0",
-    "stylelint": "16.1.0",
-    "updates": "15.1.1",
-    "versions": "12.0.0"
+    "stylelint": "16.2.1",
+    "updates": "15.1.2",
+    "versions": "12.0.1"
   },
   "keywords": [
     "stylelint",
