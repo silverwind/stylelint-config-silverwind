@@ -26,7 +26,7 @@ rules:
   "@stylistic/block-opening-brace-newline-after": null
   "@stylistic/block-opening-brace-newline-before": null
   "@stylistic/block-opening-brace-space-after": null
-  "@stylistic/block-opening-brace-space-before": null
+  "@stylistic/block-opening-brace-space-before": always
   "@stylistic/color-hex-case": null
   "@stylistic/declaration-bang-space-after": never
   "@stylistic/declaration-bang-space-before": null
@@ -161,12 +161,12 @@ rules:
   named-grid-areas-no-invalid: true
   no-descending-specificity: null
   no-duplicate-at-import-rules: true
-  no-duplicate-selectors: null # todo: true
+  no-duplicate-selectors: true
   no-empty-source: null
   no-invalid-double-slash-comments: true
   no-invalid-position-at-import-rule: [true, ignoreAtRules: [tailwind, unocss]]
   no-irregular-whitespace: true
-  no-unknown-animations: null
+  no-unknown-animations: true
   no-unknown-custom-properties: null
   number-max-precision: null
   plugin/declaration-block-no-ignored-properties: true
