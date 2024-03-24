@@ -26,7 +26,7 @@ rules:
   "@stylistic/block-opening-brace-newline-after": null
   "@stylistic/block-opening-brace-newline-before": null
   "@stylistic/block-opening-brace-space-after": null
-  "@stylistic/block-opening-brace-space-before": always
+  "@stylistic/block-opening-brace-space-before": always-multi-line
   "@stylistic/color-hex-case": null
   "@stylistic/declaration-bang-space-after": never
   "@stylistic/declaration-bang-space-before": null
