@@ -164,7 +164,7 @@ rules:
   no-duplicate-selectors: null # todo: true
   no-empty-source: null
   no-invalid-double-slash-comments: true
-  no-invalid-position-at-import-rule: true
+  no-invalid-position-at-import-rule: [true, ignoreAtRules: [tailwind, unocss]]
   no-irregular-whitespace: true
   no-unknown-animations: null
   no-unknown-custom-properties: null
