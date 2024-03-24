@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-silverwind",
-  "version": "20.0.1",
+  "version": "21.0.0",
   "description": "Extensive stylelint configuration",
   "author": "silverwind <me@silverwind.io>",
   "repository": "silverwind/stylelint-config-silverwind",
