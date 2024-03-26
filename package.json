@@ -15,7 +15,8 @@
     "@stylistic/stylelint-plugin": "2.1.0",
     "postcss-html": "1.6.0",
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
-    "stylelint-declaration-strict-value": "1.10.4"
+    "stylelint-declaration-strict-value": "1.10.4",
+    "stylelint-value-no-unknown-custom-properties": "6.0.1"
   },
   "devDependencies": {
     "eslint": "8.57.0",
