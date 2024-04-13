@@ -10,9 +10,9 @@ export default {
     {files: ["**/*.html"], customSyntax: "postcss-html"},
   ],
   ignoreFiles: [
-    "dist/**",
-    "build/**",
-    "node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/node_modules/**",
   ],
   rules: {
     "@stylistic/at-rule-name-case": null,
