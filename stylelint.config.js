@@ -1,3 +1,4 @@
+/** @type {import("stylelint").Config} */
 export default {
   plugins: [
     "stylelint-declaration-strict-value",
