@@ -5,12 +5,13 @@ node_modules: package-lock.json
 .PHONY: deps
 deps: node_modules
 
-.PHONY: build
-build: node_modules
-	node build.js
+.PHONY: lint
+lint: node_modules
+	npx eslint .
+	npx stylelint test.css
 
 .PHONY: test
-test: node_modules build
+test: node_modules
 	npx eslint .
 	npx stylelint test.css
 
@@ -28,15 +29,15 @@ update: node_modules
 
 .PHONY: patch
 patch: node_modules test
-	npx versions -c 'node build.js' patch package.json package-lock.json
+	npx versions patch package.json package-lock.json
 	$(MAKE) --no-print-directory publish
 
 .PHONY: minor
 minor: node_modules test
-	npx versions -c 'node build.js' minor package.json package-lock.json
+	npx versions minor package.json package-lock.json
 	$(MAKE) --no-print-directory publish
 
 .PHONY: major
 major: node_modules test
-	npx versions -c 'node build.js' major package.json package-lock.json
+	npx versions major package.json package-lock.json
 	$(MAKE) --no-print-directory publish

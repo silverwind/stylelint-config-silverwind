@@ -5,11 +5,11 @@
   "author": "silverwind <me@silverwind.io>",
   "repository": "silverwind/stylelint-config-silverwind",
   "license": "BSD-2-Clause",
-  "main": "./index.json",
-  "exports": "./index.json",
   "type": "module",
+  "sideEffects": false,
+  "exports": "./stylelint.config.js",
   "files": [
-    "index.json"
+    "stylelint.config.js"
   ],
   "dependencies": {
     "@stylistic/stylelint-plugin": "2.1.1",
@@ -21,14 +21,8 @@
   "devDependencies": {
     "eslint": "8.57.0",
     "eslint-config-silverwind": "83.0.2",
-    "js-yaml": "4.1.0",
     "stylelint": "16.3.1",
     "updates": "16.0.1",
     "versions": "12.0.1"
-  },
-  "keywords": [
-    "stylelint",
-    "stylelint-config",
-    "silverwind"
-  ]
+  }
 }
