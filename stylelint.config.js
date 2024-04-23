@@ -169,9 +169,9 @@ export default {
     "no-invalid-double-slash-comments": true,
     "no-invalid-position-at-import-rule": [true, {ignoreAtRules: ["tailwind"]}],
     "no-irregular-whitespace": true,
-    "no-unknown-animations": null,
-    "no-unknown-custom-media": null,
-    "no-unknown-custom-properties": null,
+    "no-unknown-animations": null, // disabled until multi-file linting works
+    "no-unknown-custom-media": null, // disabled until multi-file linting works
+    "no-unknown-custom-properties": null,  // disabled until multi-file linting works
     "number-max-precision": null,
     "plugin/declaration-block-no-ignored-properties": true,
     "property-allowed-list": null,
