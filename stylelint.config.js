@@ -170,6 +170,7 @@ export default {
     "no-invalid-position-at-import-rule": [true, {ignoreAtRules: ["tailwind"]}],
     "no-irregular-whitespace": true,
     "no-unknown-animations": null,
+    "no-unknown-custom-media": null,
     "no-unknown-custom-properties": null,
     "number-max-precision": null,
     "plugin/declaration-block-no-ignored-properties": true,
