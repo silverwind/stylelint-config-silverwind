@@ -4,5 +4,4 @@
 /npm-debug.log*
 /yarn-error.log
 /yarn.lock
-/index.json
 .DS_Store
