@@ -20,9 +20,9 @@
   },
   "devDependencies": {
     "eslint": "8.57.0",
-    "eslint-config-silverwind": "85.1.5",
-    "stylelint": "16.6.0",
-    "updates": "16.1.1",
+    "eslint-config-silverwind": "88.1.1",
+    "stylelint": "16.6.1",
+    "updates": "16.2.0",
     "versions": "12.1.2"
   }
 }
