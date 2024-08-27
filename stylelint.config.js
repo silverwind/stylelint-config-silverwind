@@ -50,7 +50,7 @@ export default {
     "@stylistic/function-whitespace-after": null,
     "@stylistic/indentation": 2,
     "@stylistic/linebreaks": null,
-    "@stylistic/max-empty-lines": 1,
+    "@stylistic/max-empty-lines": 2,
     "@stylistic/max-line-length": null,
     "@stylistic/media-feature-colon-space-after": null,
     "@stylistic/media-feature-colon-space-before": "never",
