@@ -180,7 +180,7 @@ export default {
     "property-no-vendor-prefix": null,
     "rule-empty-line-before": null,
     "rule-selector-property-disallowed-list": null,
-    "scale-unlimited/declaration-strict-value": [["/color$/"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreFunctions: false, disableFix: true, expandShorthand: true}],
+    "scale-unlimited/declaration-strict-value": [["/color$/"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreFunctions: true, disableFix: true, expandShorthand: true}],
     "selector-anb-no-unmatchable": true,
     "selector-attribute-name-disallowed-list": null,
     "selector-attribute-operator-allowed-list": null,
