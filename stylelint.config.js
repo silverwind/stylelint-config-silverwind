@@ -45,7 +45,7 @@ export default {
     "@stylistic/function-comma-space-after": null,
     "@stylistic/function-comma-space-before": null,
     "@stylistic/function-max-empty-lines": 0,
-    "@stylistic/function-parentheses-newline-inside": "always-multi-line",
+    "@stylistic/function-parentheses-newline-inside": null,
     "@stylistic/function-parentheses-space-inside": null,
     "@stylistic/function-whitespace-after": null,
     "@stylistic/indentation": 2,
