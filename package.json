@@ -15,15 +15,16 @@
     "@stylistic/stylelint-plugin": "3.1.1",
     "postcss-html": "1.7.0",
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
-    "stylelint-declaration-strict-value": "1.10.6",
+    "stylelint-declaration-strict-value": "1.10.7",
     "stylelint-value-no-unknown-custom-properties": "6.0.1"
   },
   "devDependencies": {
     "eslint": "8.57.0",
-    "eslint-config-silverwind": "94.2.1",
-    "stylelint": "16.10.0",
-    "typescript": "5.7.2",
-    "updates": "16.4.0",
+    "eslint-config-silverwind": "96.0.10",
+    "stylelint": "16.13.1",
+    "typescript": "5.7.3",
+    "typescript-config-silverwind": "6.2.1",
+    "updates": "16.4.1",
     "versions": "12.1.2"
   }
 }
