@@ -120,7 +120,7 @@ export default {
     "declaration-block-no-duplicate-custom-properties": true,
     "declaration-block-no-duplicate-properties": [true, {ignore: ["consecutive-duplicates-with-different-values"]}],
     "declaration-block-no-redundant-longhand-properties": [true, {ignoreShorthands: ["flex-flow", "overflow", "grid-template"]}],
-    "declaration-block-no-shorthand-property-overrides": null,
+    "declaration-block-no-shorthand-property-overrides": true,
     "declaration-block-single-line-max-declarations": null,
     "declaration-empty-line-before": null,
     "declaration-no-important": null,
