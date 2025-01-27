@@ -16,9 +16,6 @@ export default defineConfig({
     "**/dist/**",
     "**/build/**",
     "**/node_modules/**",
-    "dist/**", // apparently not the same as above
-    "build/**", // apparently not the same as above
-    "node_modules/**", // apparently not the same as above
   ],
   rules: {
     "@stylistic/at-rule-name-case": null,
