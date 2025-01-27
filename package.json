@@ -14,6 +14,7 @@
   "dependencies": {
     "@stylistic/stylelint-plugin": "3.1.1",
     "postcss-html": "1.8.0",
+    "stylelint-config-recommended": "15.0.0",
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
     "stylelint-declaration-strict-value": "1.10.7",
     "stylelint-value-no-unknown-custom-properties": "6.0.1"
