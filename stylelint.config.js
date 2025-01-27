@@ -12,7 +12,7 @@ export default defineConfig({
   overrides: [
     {files: ["**/*.html"], customSyntax: "postcss-html"},
   ],
-  ignoreFiles: [
+  ignoreFiles: [ // TODO: these do not work from the shared config, likely a Stylelint bug
     "**/dist/**",
     "**/build/**",
     "**/node_modules/**",
