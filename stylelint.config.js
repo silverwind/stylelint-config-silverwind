@@ -1,5 +1,7 @@
-/** @type {import("stylelint").Config} */
-export default {
+// @ts-check
+import {defineConfig} from "stylelint-define-config";
+
+export default defineConfig({
   extends: "stylelint-config-recommended",
   plugins: [
     "stylelint-declaration-strict-value",
@@ -98,7 +100,9 @@ export default {
     "color-function-notation": null, // TODO": ["modern", {ignore: "with-var-inside"}]
     "declaration-block-no-duplicate-properties": [true, {ignore: ["consecutive-duplicates-with-different-values"]}],
     "declaration-block-no-redundant-longhand-properties": [true, {ignoreShorthands: ["flex-flow", "overflow", "grid-template"]}],
+    // @ts-expect-error - https://github.com/stylelint-types/stylelint-define-config/issues/1
     "declaration-property-unit-disallowed-list": {"line-height": ["em"]},
+    // @ts-expect-error - https://github.com/stylelint-types/stylelint-define-config/issues/1
     "declaration-property-value-disallowed-list": {"word-break": ["break-word"]},
     "font-family-name-quotes": "always-where-recommended",
     "function-calc-no-unspaced-operator": true,
@@ -125,4 +129,4 @@ export default {
     "shorthand-property-no-redundant-values": true,
     "value-no-vendor-prefix": [true, {ignoreValues: ["box", "inline-box"]}],
   },
-};
+});
