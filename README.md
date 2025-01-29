@@ -2,10 +2,12 @@
 > Extensive stylelint configuration
 
 ```js
-/** @type {import("stylelint").Config} */
-export default {
+// @ts-check
+import {defineConfig} from "stylelint-define-config";
+
+export default defineConfig({
   extends: "stylelint-config-silverwind",
-}
+});
 ```
 
 © [silverwind](https://github.com/silverwind), distributed under BSD licence.
