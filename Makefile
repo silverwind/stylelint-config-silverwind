@@ -9,11 +9,13 @@ deps: node_modules
 lint: node_modules
 	npx eslint .
 	npx stylelint test.css
+	npx tsc
 
 .PHONY: test
 test: node_modules
 	npx eslint .
 	npx stylelint test.css
+	npx tsc
 
 .PHONY: publish
 publish: node_modules
