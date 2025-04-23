@@ -17,13 +17,13 @@
     "stylelint-config-recommended": "16.0.0",
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
     "stylelint-declaration-strict-value": "1.10.11",
+    "stylelint-define-config": "16.18.0",
     "stylelint-value-no-unknown-custom-properties": "6.0.1"
   },
   "devDependencies": {
     "eslint": "8.57.0",
     "eslint-config-silverwind": "100.0.8",
     "stylelint": "16.18.0",
-    "stylelint-define-config": "16.17.0",
     "typescript": "5.8.3",
     "typescript-config-silverwind": "9.0.6",
     "updates": "16.4.2",
