@@ -12,22 +12,22 @@
     "stylelint.config.js"
   ],
   "dependencies": {
-    "@stylistic/stylelint-plugin": "3.1.2",
+    "@stylistic/stylelint-plugin": "4.0.0",
     "postcss-html": "1.8.0",
     "stylelint-config-recommended": "16.0.0",
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
     "stylelint-declaration-strict-value": "1.10.11",
-    "stylelint-define-config": "16.19.0",
+    "stylelint-define-config": "16.22.0",
     "stylelint-value-no-unknown-custom-properties": "6.0.1"
   },
   "devDependencies": {
     "@stylelint-types/stylelint-stylistic": "3.1.3",
     "eslint": "8.57.0",
-    "eslint-config-silverwind": "101.0.0",
-    "stylelint": "16.20.0",
+    "eslint-config-silverwind": "101.4.0",
+    "stylelint": "16.22.0",
     "typescript": "5.8.3",
     "typescript-config-silverwind": "9.0.8",
-    "updates": "16.4.2",
-    "versions": "12.1.3"
+    "updates": "16.4.4",
+    "versions": "13.1.0"
   }
 }
