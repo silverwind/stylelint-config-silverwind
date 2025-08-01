@@ -120,6 +120,7 @@ export default defineConfig({
     "no-unknown-custom-media": null, // disabled until multi-file linting works
     "no-unknown-custom-properties": null,  // disabled until multi-file linting works
     "plugin/declaration-block-no-ignored-properties": true,
+    "property-no-deprecated": [true, {ignoreProperties: ["-webkit-box-orient"]}], // https://github.com/stylelint/stylelint/issues/8698
     "scale-unlimited/declaration-strict-value": [["/color$/"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreFunctions: true, disableFix: true, expandShorthand: true}],
     "selector-attribute-quotes": "always",
     "selector-no-vendor-prefix": true,
