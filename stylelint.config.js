@@ -3,7 +3,9 @@ import {defineConfig} from "stylelint-define-config";
 
 export default defineConfig({
   extends: "stylelint-config-recommended",
+  reportUnscopedDisables: true,
   reportNeedlessDisables: true,
+  reportInvalidScopeDisables: true,
   plugins: [
     "stylelint-declaration-strict-value",
     "stylelint-declaration-block-no-ignored-properties",
