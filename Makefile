@@ -1,3 +1,6 @@
+SOURCE_FILES := index.ts
+DIST_FILES := dist/index.js
+
 node_modules: package-lock.json
 	npm install --no-save
 	@touch node_modules
@@ -8,15 +11,21 @@ deps: node_modules
 .PHONY: lint
 lint: node_modules
 	npx eslint .
-	npx stylelint test.css
 	npx tsc
 
 .PHONY: test
-test:
-	@bash -c 'exit 0'
+test: build
+	npx stylelint -c dist/index.js test.css
+
+.PHONY: build
+build: $(DIST_FILES)
+
+$(DIST_FILES): $(SOURCE_FILES) package-lock.json vite.config.ts
+	npx vite build
+	chmod +x $(DIST_FILES)
 
 .PHONY: publish
-publish: node_modules
+publish: node_modules build test
 	if git ls-remote --exit-code origin &>/dev/null; then git push -u -f --tags origin master; fi
 	npm publish
 
@@ -28,16 +37,16 @@ update: node_modules
 	@touch node_modules
 
 .PHONY: patch
-patch: node_modules test
+patch: node_modules build test
 	npx versions patch package.json package-lock.json
 	$(MAKE) --no-print-directory publish
 
 .PHONY: minor
-minor: node_modules test
+minor: node_modules build test
 	npx versions minor package.json package-lock.json
 	$(MAKE) --no-print-directory publish
 
 .PHONY: major
-major: node_modules test
+major: node_modules build test
 	npx versions major package.json package-lock.json
 	$(MAKE) --no-print-directory publish
