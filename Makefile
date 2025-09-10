@@ -14,7 +14,7 @@ lint: node_modules
 	npx tsc
 
 .PHONY: test
-test: build
+test: build node_modules
 	npx stylelint -c dist/index.js test.css
 
 .PHONY: build
