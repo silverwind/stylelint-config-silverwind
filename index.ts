@@ -1,3 +1,8 @@
+import declarationStrictValue from "stylelint-declaration-strict-value";
+import declarationBlockNoIgnoredProperties from "stylelint-declaration-block-no-ignored-properties";
+import valueNoUnknownCustomProperties from "stylelint-value-no-unknown-custom-properties";
+import stylistic from "@stylistic/stylelint-plugin";
+
 import type {Config} from "stylelint";
 
 export default {
@@ -6,10 +11,10 @@ export default {
   reportNeedlessDisables: true,
   reportInvalidScopeDisables: true,
   plugins: [
-    "stylelint-declaration-strict-value",
-    "stylelint-declaration-block-no-ignored-properties",
-    "stylelint-value-no-unknown-custom-properties",
-    "@stylistic/stylelint-plugin",
+    declarationStrictValue,
+    declarationBlockNoIgnoredProperties,
+    valueNoUnknownCustomProperties,
+    stylistic,
   ],
   overrides: [
     {files: ["**/*.html"], customSyntax: "postcss-html"},

@@ -14,23 +14,25 @@
     "dist"
   ],
   "dependencies": {
-    "@stylistic/stylelint-plugin": "4.0.0",
     "postcss-html": "1.8.0",
-    "stylelint-config-recommended": "17.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "2.8.0",
-    "stylelint-declaration-strict-value": "1.10.11",
-    "stylelint-value-no-unknown-custom-properties": "6.0.1"
+    "stylelint-config-recommended": "17.0.0"
   },
   "devDependencies": {
     "@stylelint-types/stylelint-stylistic": "3.1.3",
-    "eslint": "9.35.0",
-    "eslint-config-silverwind": "103.0.4",
-    "stylelint": "16.24.0",
+    "@stylistic/stylelint-plugin": "4.0.0",
+    "eslint": "9.36.0",
+    "eslint-config-silverwind": "105.1.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.8.0",
+    "stylelint-declaration-strict-value": "1.10.11",
+    "stylelint-value-no-unknown-custom-properties": "6.0.1",
     "typescript": "5.9.2",
     "typescript-config-silverwind": "10.0.1",
     "updates": "16.7.2",
-    "versions": "13.1.1",
-    "vite": "7.1.5",
-    "vite-config-silverwind": "5.4.0"
+    "versions": "13.1.2",
+    "vite": "7.1.7",
+    "vite-config-silverwind": "6.0.2"
+  },
+  "peerDependencies": {
+    "stylelint": "*"
   }
 }
