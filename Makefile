@@ -22,7 +22,10 @@ build: $(DIST_FILES)
 
 $(DIST_FILES): $(SOURCE_FILES) package-lock.json vite.config.ts
 	npx vite build
-	chmod +x $(DIST_FILES)
+
+.PHONY: watch
+watch:
+	npx tsdown --watch
 
 .PHONY: publish
 publish: node_modules build test
