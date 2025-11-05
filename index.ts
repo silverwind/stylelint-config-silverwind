@@ -3,9 +3,9 @@ import declarationBlockNoIgnoredProperties from "stylelint-declaration-block-no-
 import valueNoUnknownCustomProperties from "stylelint-value-no-unknown-custom-properties";
 import stylistic from "@stylistic/stylelint-plugin";
 
-import type {Config} from "stylelint";
+import {defineConfig} from "stylelint";
 
-export default {
+export default defineConfig({
   extends: "stylelint-config-recommended",
   reportUnscopedDisables: true,
   reportNeedlessDisables: true,
@@ -135,4 +135,4 @@ export default {
     "shorthand-property-no-redundant-values": true,
     "value-no-vendor-prefix": [true, {ignoreValues: ["box", "inline-box"]}],
   },
-} satisfies Config;
+});
