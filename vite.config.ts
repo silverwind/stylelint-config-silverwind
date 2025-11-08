@@ -8,7 +8,7 @@ export default defineConfig(nodeLib({
   },
   dtsExcludes: [
     "build.js",
-    "eslintrc.cjs",
+    "eslint.config.ts",
     "globals.js",
     "test.ts",
     "test2.ts",
