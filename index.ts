@@ -16,9 +16,6 @@ export default {
     valueNoUnknownCustomProperties,
     stylistic,
   ],
-  overrides: [
-    {files: ["**/*.html"], customSyntax: "postcss-html"},
-  ],
   ignoreFiles: [ // TODO: these do not work from the shared config, likely a Stylelint bug
     "**/dist/**",
     "**/build/**",
