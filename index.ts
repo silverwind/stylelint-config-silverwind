@@ -17,9 +17,16 @@ export default {
     stylistic,
   ],
   ignoreFiles: [ // TODO: these do not work from the shared config, likely a Stylelint bug
-    "**/dist/**",
+    "**/.air/**",
+    "**/.git/**",
+    "**/.make/**",
+    "**/.ruff_cache/**",
+    "**/.swc/**",
+    "**/.venv/**",
     "**/build/**",
+    "**/dist/**",
     "**/node_modules/**",
+    "**/persistent/**",
   ],
   rules: {
     "@stylistic/at-rule-name-case": null,
