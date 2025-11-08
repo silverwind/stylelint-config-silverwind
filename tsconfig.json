@@ -4,6 +4,7 @@
     "strict": true,
     "types": [
       "@stylelint-types/stylelint-stylistic",
+      "./types.d.ts",
     ]
   }
 }
