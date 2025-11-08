@@ -2,7 +2,7 @@ import declarationStrictValue from "stylelint-declaration-strict-value";
 import declarationBlockNoIgnoredProperties from "stylelint-declaration-block-no-ignored-properties";
 import valueNoUnknownCustomProperties from "stylelint-value-no-unknown-custom-properties";
 import stylistic from "@stylistic/stylelint-plugin";
-import postcssHtml from "postcss-html";
+import postcssHtml from "@silverwind/postcss-html"; // custom module with support for non-CSS syntaxes removed
 import type {Config} from "stylelint";
 
 export default {
