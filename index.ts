@@ -2,6 +2,7 @@ import declarationStrictValue from "stylelint-declaration-strict-value";
 import declarationBlockNoIgnoredProperties from "stylelint-declaration-block-no-ignored-properties";
 import valueNoUnknownCustomProperties from "stylelint-value-no-unknown-custom-properties";
 import stylistic from "@stylistic/stylelint-plugin";
+import postcssHtml from "postcss-html";
 
 import type {Config} from "stylelint";
 
@@ -15,6 +16,9 @@ export default {
     declarationBlockNoIgnoredProperties,
     valueNoUnknownCustomProperties,
     stylistic,
+  ],
+  overrides: [
+    {files: ["**/*.html"], customSyntax: postcssHtml},
   ],
   ignoreFiles: [ // TODO: these do not work from the shared config, likely a Stylelint bug
     "**/.air/**",
