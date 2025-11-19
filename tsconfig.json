@@ -1,8 +1,6 @@
 {
   "extends": "typescript-config-silverwind",
   "compilerOptions": {
-    "strictNullChecks": true,
-    "noImplicitAny": true,
     "types": [
       "@stylelint-types/stylelint-stylistic",
       "./types.d.ts",
