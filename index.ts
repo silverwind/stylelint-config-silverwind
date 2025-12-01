@@ -17,7 +17,7 @@ export default {
     stylistic,
   ],
   overrides: [
-    {files: ["**/*.html"], customSyntax: {parse: postcssHtml.parse, stringify: postcssHtml.stringify}},
+    {files: ["**/*.html"], customSyntax: postcssHtml},
   ],
   ignoreFiles: [ // TODO: these do not work from the shared config, likely a Stylelint bug
     "**/.air/**",
