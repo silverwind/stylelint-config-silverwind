@@ -26,7 +26,7 @@
     "eslint": "9.39.2",
     "eslint-config-silverwind": "118.0.0",
     "stylelint": "17.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "2.8.0",
+    "stylelint-declaration-block-no-ignored-properties": "3.0.0",
     "stylelint-declaration-strict-value": "1.10.11",
     "stylelint-value-no-unknown-custom-properties": "6.1.1",
     "typescript": "5.9.3",
