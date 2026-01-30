@@ -1,18 +1,13 @@
-/* stylelint-disable @stylistic/selector-descendant-combinator-no-non-space */
+/* stylelint-disable-next-line @stylistic/selector-descendant-combinator-no-non-space */
 .foo
 .bar {
   display: block;
 }
-/* stylelint-enable @stylistic/selector-descendant-combinator-no-non-space */
 
-/* stylelint-disable @stylistic/declaration-colon-space-after */
 .baz {
-  display:block;
+  display:block; /* stylelint-disable-line @stylistic/declaration-colon-space-after */
 }
-/* stylelint-enable @stylistic/declaration-colon-space-after */
 
-/* stylelint-disable @stylistic/declaration-bang-space-before, @stylistic/declaration-colon-space-after */
 .qux {
-  margin:0!important;
+  margin:0!important; /* stylelint-disable-line @stylistic/declaration-bang-space-before, @stylistic/declaration-colon-space-after */
 }
-/* stylelint-enable @stylistic/declaration-bang-space-before, @stylistic/declaration-colon-space-after */
