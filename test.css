@@ -1,0 +1,13 @@
+/* stylelint-disable-next-line @stylistic/selector-descendant-combinator-no-non-space */
+.foo
+.bar {
+  display: block;
+}
+
+.baz {
+  display:block; /* stylelint-disable-line @stylistic/declaration-colon-space-after */
+}
+
+.qux {
+  margin:0!important; /* stylelint-disable-line @stylistic/declaration-bang-space-before, @stylistic/declaration-colon-space-after */
+}
