@@ -1,0 +1,18 @@
+/* stylelint-disable @stylistic/selector-descendant-combinator-no-non-space */
+.foo
+.bar {
+  display: block;
+}
+/* stylelint-enable @stylistic/selector-descendant-combinator-no-non-space */
+
+/* stylelint-disable @stylistic/declaration-colon-space-after */
+.baz {
+  display:block;
+}
+/* stylelint-enable @stylistic/declaration-colon-space-after */
+
+/* stylelint-disable @stylistic/declaration-bang-space-before, @stylistic/declaration-colon-space-after */
+.qux {
+  margin:0!important;
+}
+/* stylelint-enable @stylistic/declaration-bang-space-before, @stylistic/declaration-colon-space-after */
