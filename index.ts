@@ -55,7 +55,7 @@ export default {
     "@stylistic/declaration-block-semicolon-space-before": "never",
     "@stylistic/declaration-block-trailing-semicolon": null,
     "@stylistic/declaration-colon-newline-after": null,
-    "@stylistic/declaration-colon-space-after": "always",
+    "@stylistic/declaration-colon-space-after": null,
     "@stylistic/declaration-colon-space-before": "never",
     "@stylistic/function-comma-newline-after": null,
     "@stylistic/function-comma-newline-before": null,
