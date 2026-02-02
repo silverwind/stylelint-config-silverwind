@@ -5,9 +5,9 @@
 }
 
 .baz {
-  display:block; /* stylelint-disable-line @stylistic/declaration-colon-space-after */
+  display:block;
 }
 
 .qux {
-  margin:0!important; /* stylelint-disable-line @stylistic/declaration-bang-space-before, @stylistic/declaration-colon-space-after */
+  margin:0!important; /* stylelint-disable-line @stylistic/declaration-bang-space-before */
 }
