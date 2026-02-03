@@ -109,7 +109,7 @@ export default {
     "@stylistic/value-list-comma-space-after": null,
     "@stylistic/value-list-comma-space-before": null,
     "@stylistic/value-list-max-empty-lines": 0,
-    "at-rule-no-unknown": [true, {ignoreAtRules: ["tailwind", "unocss", "config"]}],
+    "at-rule-no-unknown": [true, {ignoreAtRules: ["tailwind", "unocss", "config", "source"]}],
     "at-rule-no-vendor-prefix": true,
     "color-function-notation": null, // TODO": ["modern", {ignore: "with-var-inside"}]
     "declaration-block-no-duplicate-properties": [true, {ignore: ["consecutive-duplicates-with-different-values"]}],
