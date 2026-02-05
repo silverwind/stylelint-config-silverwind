@@ -142,4 +142,4 @@ export default {
     "shorthand-property-no-redundant-values": true,
     "value-no-vendor-prefix": [true, {ignoreValues: ["box", "inline-box"]}],
   },
-} satisfies Config;
+} satisfies Config as Config; // prevent TS2742 caused by postcss being a transitive dependency
