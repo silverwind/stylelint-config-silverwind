@@ -25,6 +25,7 @@
     "@stylistic/stylelint-plugin": "5.0.1",
     "eslint": "9.39.2",
     "eslint-config-silverwind": "118.1.1",
+    "postcss": "8.5.6",
     "stylelint": "17.1.0",
     "stylelint-declaration-block-no-ignored-properties": "3.0.0",
     "stylelint-declaration-strict-value": "1.10.11",

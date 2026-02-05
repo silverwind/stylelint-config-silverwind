@@ -27,6 +27,9 @@ importers:
       eslint-config-silverwind:
         specifier: 118.1.1
         version: 118.1.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+      postcss:
+        specifier: 8.5.6
+        version: 8.5.6
       stylelint:
         specifier: 17.1.0
         version: 17.1.0(typescript@5.9.3)
