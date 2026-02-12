@@ -11,7 +11,7 @@ deps: node_modules
 .PHONY: lint
 lint: node_modules
 	pnpm exec eslint .
-	pnpm exec tsc
+	pnpm exec tsgo
 
 .PHONY: test
 test: build node_modules
