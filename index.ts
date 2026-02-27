@@ -112,6 +112,7 @@ export default {
     "at-rule-no-unknown": [true, {ignoreAtRules: ["tailwind", "unocss", "config", "source"]}],
     "at-rule-no-vendor-prefix": true,
     "color-function-notation": null, // TODO": ["modern", {ignore: "with-var-inside"}]
+    "declaration-property-value-no-unknown": true,
     "declaration-block-no-duplicate-properties": [true, {ignore: ["consecutive-duplicates-with-different-values"]}],
     "declaration-block-no-redundant-longhand-properties": [true, {ignoreShorthands: ["flex-flow", "overflow", "grid-template"]}],
     "declaration-property-unit-disallowed-list": {"line-height": ["em"]},
