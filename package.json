@@ -7,9 +7,8 @@
   "license": "BSD-2-Clause",
   "type": "module",
   "sideEffects": false,
-  "exports": {
-    "import": "./dist/index.js"
-  },
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
@@ -34,8 +33,8 @@
     "updates": "17.6.2",
     "updates-config-silverwind": "1.0.3",
     "versions": "14.2.0",
-    "vite": "7.3.1",
-    "vite-config-silverwind": "6.0.11"
+    "tsdown": "0.20.3",
+    "tsdown-config-silverwind": "1.7.5"
   },
   "packageManager": "pnpm@10.30.3"
 }
