@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      stylelint-config-recommended:
-        specifier: 18.0.0
-        version: 18.0.0(stylelint@17.4.0(typescript@5.9.3))
     devDependencies:
       '@silverwind/postcss-html':
         specifier: 1.8.3
@@ -36,6 +32,9 @@ importers:
       stylelint:
         specifier: 17.4.0
         version: 17.4.0(typescript@5.9.3)
+      stylelint-config-recommended:
+        specifier: 18.0.0
+        version: 18.0.0(stylelint@17.4.0(typescript@5.9.3))
       stylelint-declaration-block-no-ignored-properties:
         specifier: 3.0.0
         version: 3.0.0(stylelint@17.4.0(typescript@5.9.3))

@@ -3,10 +3,10 @@ import declarationBlockNoIgnoredProperties from "stylelint-declaration-block-no-
 import valueNoUnknownCustomProperties from "stylelint-value-no-unknown-custom-properties";
 import stylistic from "@stylistic/stylelint-plugin";
 import postcssHtml from "@silverwind/postcss-html"; // custom module with support for non-CSS syntaxes removed
+import recommended from "stylelint-config-recommended";
 import type {Config} from "stylelint";
 
 export default {
-  extends: "stylelint-config-recommended",
   reportUnscopedDisables: true,
   reportNeedlessDisables: true,
   reportInvalidScopeDisables: true,
@@ -32,6 +32,7 @@ export default {
     "**/persistent/**",
   ],
   rules: {
+    ...recommended.rules,
     "@stylistic/at-rule-name-case": null,
     "@stylistic/at-rule-name-newline-after": null,
     "@stylistic/at-rule-name-space-after": null,
