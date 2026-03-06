@@ -21,20 +21,20 @@
     "@stylistic/stylelint-plugin": "5.0.1",
     "@typescript/native-preview": "7.0.0-dev.20260306.1",
     "eslint": "9.39.3",
-    "eslint-config-silverwind": "122.0.2",
+    "eslint-config-silverwind": "122.0.4",
     "postcss": "8.5.8",
     "stylelint": "17.4.0",
     "stylelint-config-recommended": "18.0.0",
     "stylelint-declaration-block-no-ignored-properties": "3.0.0",
     "stylelint-declaration-strict-value": "1.11.1",
     "stylelint-value-no-unknown-custom-properties": "6.1.1",
+    "tsdown": "0.21.0",
+    "tsdown-config-silverwind": "2.0.0",
     "typescript": "5.9.3",
     "typescript-config-silverwind": "15.0.0",
     "updates": "17.8.2",
     "updates-config-silverwind": "1.0.3",
-    "versions": "14.2.1",
-    "tsdown": "0.21.0",
-    "tsdown-config-silverwind": "2.0.0"
+    "versions": "14.2.1"
   },
   "packageManager": "pnpm@10.30.3"
 }
