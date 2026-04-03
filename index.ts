@@ -23,6 +23,7 @@ export default {
     "**/.air/**",
     "**/.git/**",
     "**/.make/**",
+    "**/.playwright-mcp/**",
     "**/.ruff_cache/**",
     "**/.swc/**",
     "**/.venv/**",
