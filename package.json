@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-silverwind",
-  "version": "38.0.0",
+  "version": "38.0.1",
   "description": "Extensive stylelint configuration",
   "author": "silverwind <me@silverwind.io>",
   "repository": "silverwind/stylelint-config-silverwind",
@@ -19,7 +19,7 @@
     "@silverwind/postcss-html": "1.8.3",
     "@stylelint-types/stylelint-stylistic": "5.0.0",
     "@stylistic/stylelint-plugin": "5.1.0",
-    "@typescript/native-preview": "7.0.0-dev.20260331.1",
+    "@typescript/native-preview": "7.0.0-dev.20260403.1",
     "eslint": "10.1.0",
     "eslint-config-silverwind": "130.1.0",
     "postcss": "8.5.8",
@@ -31,8 +31,8 @@
     "tsdown": "0.21.7",
     "tsdown-config-silverwind": "2.0.5",
     "typescript": "5.9.3",
-    "typescript-config-silverwind": "16.1.0",
-    "updates": "17.13.1",
+    "typescript-config-silverwind": "17.0.0",
+    "updates": "17.13.3",
     "updates-config-silverwind": "2.0.1",
     "versions": "14.2.6"
   },
