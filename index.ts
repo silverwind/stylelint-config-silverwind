@@ -113,7 +113,9 @@ export default {
     "@stylistic/value-list-max-empty-lines": 0,
     "at-rule-no-unknown": [true, {ignoreAtRules: ["tailwind", "unocss", "config", "source"]}],
     "at-rule-no-vendor-prefix": true,
+    "block-no-redundant-nested-style-rules": true,
     "color-function-notation": null, // TODO": ["modern", {ignore: "with-var-inside"}]
+    "color-no-invalid-hex": true,
     "declaration-property-value-no-unknown": true,
     "declaration-block-no-duplicate-properties": [true, {ignore: ["consecutive-duplicates-with-different-values"]}],
     "declaration-block-no-redundant-longhand-properties": [true, {ignoreShorthands: ["flex-flow", "overflow", "grid-template"]}],
@@ -121,7 +123,9 @@ export default {
     "declaration-property-value-disallowed-list": {"word-break": ["break-word"]},
     "font-family-name-quotes": "always-where-recommended",
     "function-calc-no-unspaced-operator": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
     "function-name-case": "lower",
+    "function-no-unknown": true,
     "function-url-quotes": "always",
     "import-notation": "string",
     "keyframe-block-no-duplicate-selectors": true,
@@ -144,6 +148,7 @@ export default {
     "selector-type-case": "lower",
     "selector-type-no-unknown": [true, {ignore: ["custom-elements"]}],
     "shorthand-property-no-redundant-values": true,
+    "unit-no-unknown": true,
     "value-no-vendor-prefix": [true, {ignoreValues: ["box", "inline-box"]}],
   },
 } satisfies Config as Config; // prevent TS2742 caused by postcss being a transitive dependency
