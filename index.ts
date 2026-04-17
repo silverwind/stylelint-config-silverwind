@@ -139,6 +139,7 @@ export default {
     "property-no-deprecated": true,
     "scale-unlimited/declaration-strict-value": [["/color$/"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreFunctions: true, disableFix: true, expandShorthand: true}],
     "selector-attribute-quotes": "always",
+    "selector-no-deprecated": true,
     "selector-no-vendor-prefix": true,
     "selector-type-case": "lower",
     "selector-type-no-unknown": [true, {ignore: ["custom-elements"]}],
