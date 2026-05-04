@@ -141,7 +141,7 @@ export default {
     "no-unknown-custom-properties": null,  // disabled until multi-file linting works
     "plugin/declaration-block-no-ignored-properties": true,
     "property-no-deprecated": true,
-    "scale-unlimited/declaration-strict-value": [["/color$/"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreFunctions: true, disableFix: true, expandShorthand: true}],
+    "scale-unlimited/declaration-strict-value": [["/color$/", "fill", "stroke"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreFunctions: true, disableFix: true, expandShorthand: true}],
     "selector-attribute-quotes": "always",
     "selector-no-deprecated": null, // matches in-use elements like "tt"
     "selector-no-vendor-prefix": true,
