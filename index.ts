@@ -21,6 +21,7 @@ export default {
   ],
   ignoreFiles: [ // TODO: these do not work from the shared config, likely a Stylelint bug
     "**/.air/**",
+    "**/.claude/**",
     "**/.git/**",
     "**/.make/**",
     "**/.playwright-mcp/**",
