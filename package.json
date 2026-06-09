@@ -34,8 +34,8 @@
     "typescript": "6.0.3",
     "typescript-config-silverwind": "20.0.0",
     "updates": "17.18.0",
-    "updates-config-silverwind": "3.0.2",
+    "updates-config-silverwind": "4.0.0",
     "versions": "15.1.1"
   },
-  "packageManager": "pnpm@10.34.1"
+  "packageManager": "pnpm@11.5.2"
 }
