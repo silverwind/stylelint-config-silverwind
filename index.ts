@@ -87,6 +87,7 @@ export default {
     "@stylistic/no-eol-whitespace": true,
     "@stylistic/no-extra-semicolons": true,
     "@stylistic/no-missing-end-of-source-newline": null,
+    "@stylistic/no-multiple-whitespaces": true,
     "@stylistic/number-leading-zero": null,
     "@stylistic/number-no-trailing-zeros": null,
     "@stylistic/property-case": "lower",
@@ -145,6 +146,7 @@ export default {
     "no-unknown-custom-properties": null,  // disabled until multi-file linting works
     "plugin/declaration-block-no-ignored-properties": true,
     "property-no-deprecated": true,
+    "property-no-vendor-prefix": [true, {ignoreProperties: ["/-text-size-adjust$/"]}], // no unprefixed support in Safari or Firefox
     "scale-unlimited/declaration-strict-value": [["/color$/", "fill", "stroke"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreFunctions: true, disableFix: true, expandShorthand: true}],
     "selector-attribute-quotes": "always",
     "selector-no-deprecated": null, // matches in-use elements like "tt"
