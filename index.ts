@@ -10,6 +10,7 @@ export default {
   reportUnscopedDisables: true,
   reportNeedlessDisables: true,
   reportInvalidScopeDisables: true,
+  reportDescriptionlessDisables: true,
   plugins: [
     declarationStrictValue,
     declarationBlockNoIgnoredProperties,
