@@ -11,3 +11,17 @@
 .qux {
   margin:0!important; /* stylelint-disable-line @stylistic/declaration-bang-space-before -- the fixture omits the space on purpose */
 }
+
+@font-face {
+  font-family: x;
+  src: url("x.woff2");
+  font-weight: 500;
+}
+
+@page {
+  color: #000;
+
+  @top-center {
+    color: #666;
+  }
+}
