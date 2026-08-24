@@ -148,7 +148,7 @@ export default {
     "plugin/declaration-block-no-ignored-properties": true,
     "property-no-deprecated": true,
     "property-no-vendor-prefix": [true, {ignoreProperties: ["/-text-size-adjust$/"]}], // no unprefixed support in Safari or Firefox
-    "scale-unlimited/declaration-strict-value": [["/color$/", "fill", "stroke"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreAtRules: {"@font-face": "font-weight", "@page": true}, ignoreFunctions: true, disableFix: true, expandShorthand: true}],
+    "scale-unlimited/declaration-strict-value": [["/color$/", "fill", "stroke"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreAtRules: ["@font-face", "@page"], ignoreFunctions: true, disableFix: true, expandShorthand: true}],
     "selector-attribute-quotes": "always",
     "selector-no-deprecated": null, // matches in-use elements like "tt"
     "selector-no-vendor-prefix": true,

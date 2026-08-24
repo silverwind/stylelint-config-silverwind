@@ -15,7 +15,7 @@
 @font-face {
   font-family: x;
   src: url("x.woff2");
-  font-weight: 500;
+  color: #000; /* stylelint-disable-line at-rule-descriptor-no-unknown -- no valid descriptor matches this config's props, so reaching declaration-strict-value needs an invalid one */
 }
 
 @page {
