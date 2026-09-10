@@ -151,6 +151,7 @@ export default {
     "scale-unlimited/declaration-strict-value": [["/color$/", "fill", "stroke"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreAtRules: ["@font-face", "@page"], ignoreFunctions: true, disableFix: true, expandShorthand: true}],
     "selector-attribute-quotes": "always",
     "selector-no-deprecated": null, // matches in-use elements like "tt"
+    "selector-no-unmatchable": true,
     "selector-no-vendor-prefix": true,
     "selector-type-case": "lower",
     "selector-type-no-unknown": [true, {ignore: ["custom-elements"]}],
