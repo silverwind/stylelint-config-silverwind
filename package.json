@@ -3,7 +3,10 @@
   "version": "44.0.0",
   "description": "Extensive stylelint configuration",
   "author": "silverwind <me@silverwind.io>",
-  "repository": "silverwind/stylelint-config-silverwind",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silverwind/stylelint-config-silverwind.git"
+  },
   "license": "BSD-2-Clause",
   "type": "module",
   "sideEffects": false,
