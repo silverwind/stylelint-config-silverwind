@@ -1,14 +1,6 @@
 /* stylelint-disable-next-line @stylistic/selector-descendant-combinator-no-non-space -- the fixture splits the selector on purpose */
 .foo
 .bar {
-  display: block;
-}
-
-.baz {
-  display:block;
-}
-
-.qux {
   margin:0!important; /* stylelint-disable-line @stylistic/declaration-bang-space-before -- the fixture omits the space on purpose */
 }
 
