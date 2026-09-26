@@ -20,7 +20,7 @@ export default {
   overrides: [
     {files: ["**/*.html"], customSyntax: postcssHtml},
   ],
-  ignoreFiles: [ // TODO: these do not work from the shared config, likely a Stylelint bug
+  ignoreFiles: [ // TODO: ineffective for consumers, stylelint resolves relative globs against this config's dir
     "**/.air/**",
     "**/.claude/**",
     "**/.git/**",
@@ -118,7 +118,7 @@ export default {
     "at-rule-no-unknown": [true, {ignoreAtRules: ["tailwind", "unocss", "config", "source"]}],
     "at-rule-no-vendor-prefix": true,
     "block-no-redundant-nested-style-rules": true,
-    "color-function-notation": null, // TODO": ["modern", {ignore: "with-var-inside"}]
+    "color-function-notation": null, // TODO: ["modern", {ignore: "with-var-inside"}]
     "color-no-invalid-hex": true,
     "declaration-property-value-keyword-no-deprecated": true,
     "declaration-property-value-no-unknown": true,
@@ -144,7 +144,7 @@ export default {
     "no-invalid-position-at-import-rule": [true, {ignoreAtRules: ["tailwind"]}],
     "no-unknown-animations": null, // disabled until multi-file linting works
     "no-unknown-custom-media": null, // disabled until multi-file linting works
-    "no-unknown-custom-properties": null,  // disabled until multi-file linting works
+    "no-unknown-custom-properties": null, // disabled until multi-file linting works
     "plugin/declaration-block-no-ignored-properties": true,
     "property-no-deprecated": true,
     "property-no-vendor-prefix": [true, {ignoreProperties: ["/-text-size-adjust$/"]}], // no unprefixed support in Safari or Firefox
