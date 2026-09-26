@@ -20,7 +20,7 @@ export default {
   overrides: [
     {files: ["**/*.html"], customSyntax: postcssHtml},
   ],
-  ignoreFiles: [ // TODO: ineffective for consumers, stylelint resolves relative globs against this config's dir
+  ignoreFiles: [ // TODO: ineffective when loaded by name or path, stylelint then resolves them against this config's dir
     "**/.air/**",
     "**/.claude/**",
     "**/.git/**",
@@ -159,4 +159,4 @@ export default {
     "unit-no-unknown": true,
     "value-no-vendor-prefix": [true, {ignoreValues: ["box", "inline-box"]}],
   },
-} satisfies Config as Config; // prevent TS2742 caused by postcss being a transitive dependency
+} satisfies Config as Config; // prevent TS2883 caused by postcss being a transitive dependency
