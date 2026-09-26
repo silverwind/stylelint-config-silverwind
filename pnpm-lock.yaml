@@ -169,9 +169,6 @@ importers:
       '@silverwind/postcss-html':
         specifier: 1.8.3
         version: 1.8.3
-      '@stylelint-types/stylelint-stylistic':
-        specifier: 5.3.0
-        version: 5.3.0(stylelint-define-config@17.15.0(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3)))(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))
       '@stylistic/stylelint-plugin':
         specifier: 5.3.0
         version: 5.3.0(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))
@@ -184,9 +181,6 @@ importers:
       eslint-config-silverwind:
         specifier: 151.0.1
         version: 151.0.1(eslint@10.11.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
-      postcss:
-        specifier: 8.5.28
-        version: 8.5.28
       stylelint:
         specifier: 17.15.0
         version: 17.15.0(supports-color@10.2.2)(typescript@6.0.3)
@@ -487,16 +481,6 @@ packages:
   '@sindresorhus/merge-streams@4.0.0':
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
-
-  '@stylelint-types/stylelint-stylistic@5.3.0':
-    resolution: {integrity: sha512-jKfNSIS49f+M+p+ErXm0FO5wsHlmEGZa7CxTApeVm/lCpjpc+CYWH2D4FR1SjAhdGwvPi1VWNoKsxDyARm8PPQ==}
-    engines: {node: '>=20.19.0', npm: '>=9.0.0', pnpm: '>=9.0.0'}
-    peerDependencies:
-      stylelint: '>=17'
-      stylelint-define-config: '>=17'
-    peerDependenciesMeta:
-      stylelint:
-        optional: true
 
   '@stylistic/stylelint-plugin@5.3.0':
     resolution: {integrity: sha512-xbyxPeaO9Vns6A8/0MQV6PzZ5nNZCoGV4q1ERaNd5EBAKlWt+YcpaPapNYNUkZaiQg98+xPbikdA58ehquJG3g==}
@@ -979,9 +963,6 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
-
-  csstype@3.2.3:
-    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -1896,12 +1877,6 @@ packages:
     peerDependencies:
       stylelint: '>=16 <=17'
 
-  stylelint-define-config@17.15.0:
-    resolution: {integrity: sha512-+qN5XMlax1iEOOVEu4/dZx/LSAWiF+a86J5wyM+8UpeFmNvQRaWWwqmZA4glTZ7hmIxOGo1ugDfHoOaNQkbs9w==}
-    engines: {node: '>=20.19.0', npm: '>=9', pnpm: '>=10'}
-    peerDependencies:
-      stylelint: '>=17.0.0'
-
   stylelint-value-no-unknown-custom-properties@6.1.1:
     resolution: {integrity: sha512-eQ1zidKD5t9zMEaskjGUY4W47lH76qMlmsDSmCAPEwtaGzB4Ls7ORTfysC1D6hamp2zFC+vN1vpQ+GFz3Tw3lw==}
     engines: {node: '>=18.12.0'}
@@ -2317,12 +2292,6 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@stylelint-types/stylelint-stylistic@5.3.0(stylelint-define-config@17.15.0(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3)))(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))':
-    dependencies:
-      stylelint-define-config: 17.15.0(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))
-    optionalDependencies:
-      stylelint: 17.15.0(supports-color@10.2.2)(typescript@6.0.3)
-
   '@stylistic/stylelint-plugin@5.3.0(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))':
     dependencies:
       '@csstools/css-parser-algorithms': 4.0.1(@csstools/css-tokenizer@4.0.2)
@@ -2697,8 +2666,6 @@ snapshots:
       source-map-js: 1.2.1
 
   cssesc@3.0.0: {}
-
-  csstype@3.2.3: {}
 
   data-view-buffer@1.0.2:
     dependencies:
@@ -3716,11 +3683,6 @@ snapshots:
   stylelint-declaration-strict-value@1.12.1(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3)):
     dependencies:
       regexp.escape: 2.0.1
-      stylelint: 17.15.0(supports-color@10.2.2)(typescript@6.0.3)
-
-  stylelint-define-config@17.15.0(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3)):
-    dependencies:
-      csstype: 3.2.3
       stylelint: 17.15.0(supports-color@10.2.2)(typescript@6.0.3)
 
   stylelint-value-no-unknown-custom-properties@6.1.1(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3)):

@@ -1,9 +1,3 @@
 {
-  "extends": "typescript-config-silverwind",
-  "compilerOptions": {
-    "types": [
-      "@stylelint-types/stylelint-stylistic",
-      "./types.d.ts",
-    ]
-  }
+  "extends": "typescript-config-silverwind"
 }
