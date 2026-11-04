@@ -10,17 +10,17 @@ deps: node_modules
 
 .PHONY: lint
 lint: node_modules
-	pnpm exec eslint-silverwind --color .
+	pnpm exec eslint-silverwind --concurrency off --color .
 	pnpm exec tsc
 
 .PHONY: lint-fix
 lint-fix: node_modules
-	pnpm exec eslint-silverwind --color . --fix
+	pnpm exec eslint-silverwind --concurrency off --color . --fix
 	pnpm exec tsc
 
 .PHONY: test
 test: node_modules build
-	pnpm exec stylelint -c dist/index.js test.css
+	pnpm exec stylelint -c dist/index.js test.css test.html
 
 .PHONY: build
 build: node_modules $(DIST_FILES)

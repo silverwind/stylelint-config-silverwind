@@ -17,20 +17,20 @@
   ],
   "packageManager": "pnpm@12.16.1",
   "peerDependencies": {
-    "stylelint": "*"
+    "stylelint": ">=18"
   },
   "devDependencies": {
-    "@silverwind/postcss-html": "1.8.3",
-    "@stylistic/stylelint-plugin": "5.3.1",
+    "@stylistic/stylelint-plugin": "6.0.0",
     "eslint": "10.14.0",
     "eslint-config-silverwind": "155.2.0",
-    "stylelint": "17.16.0",
-    "stylelint-config-recommended": "18.0.0",
+    "postcss-html": "2.0.0",
+    "stylelint": "18.0.0",
+    "stylelint-config-recommended": "19.0.0",
     "stylelint-declaration-block-no-ignored-properties": "3.0.0",
     "stylelint-declaration-strict-value": "1.12.1",
     "stylelint-value-no-unknown-custom-properties": "6.1.1",
-    "tsdown": "0.23.4",
-    "tsdown-config-silverwind": "4.2.0",
+    "tsdown": "0.23.5",
+    "tsdown-config-silverwind": "4.2.1",
     "typescript": "7.0.2",
     "typescript-config-silverwind": "21.0.2",
     "updates": "20.0.0",

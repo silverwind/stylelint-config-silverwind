@@ -2,7 +2,7 @@ import declarationStrictValue from "stylelint-declaration-strict-value";
 import declarationBlockNoIgnoredProperties from "stylelint-declaration-block-no-ignored-properties";
 import valueNoUnknownCustomProperties from "stylelint-value-no-unknown-custom-properties";
 import stylistic from "@stylistic/stylelint-plugin";
-import postcssHtml from "@silverwind/postcss-html"; // custom module with support for non-CSS syntaxes removed
+import postcssHtml from "postcss-html";
 import recommended from "stylelint-config-recommended";
 import type {Config} from "stylelint";
 
@@ -79,6 +79,8 @@ export default {
     "@stylistic/media-feature-parentheses-space-inside": null,
     "@stylistic/media-feature-range-operator-space-after": "always",
     "@stylistic/media-feature-range-operator-space-before": "always",
+    "@stylistic/media-feature-slash-space-after": "always",
+    "@stylistic/media-feature-slash-space-before": "always",
     "@stylistic/media-query-list-comma-newline-after": null,
     "@stylistic/media-query-list-comma-newline-before": null,
     "@stylistic/media-query-list-comma-space-after": null,
@@ -114,6 +116,8 @@ export default {
     "@stylistic/value-list-comma-space-after": null,
     "@stylistic/value-list-comma-space-before": null,
     "@stylistic/value-list-max-empty-lines": 0,
+    "@stylistic/value-slash-space-after": "always",
+    "@stylistic/value-slash-space-before": "always",
     "at-rule-no-deprecated": true,
     "at-rule-no-unknown": [true, {ignoreAtRules: ["tailwind", "unocss", "config", "source"]}],
     "at-rule-no-vendor-prefix": true,
