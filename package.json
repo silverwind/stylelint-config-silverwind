@@ -28,7 +28,6 @@
     "stylelint-config-recommended": "19.0.0",
     "stylelint-declaration-block-no-ignored-properties": "3.0.0",
     "stylelint-declaration-strict-value": "1.12.1",
-    "stylelint-value-no-unknown-custom-properties": "6.1.1",
     "tsdown": "0.23.5",
     "tsdown-config-silverwind": "4.2.1",
     "typescript": "7.0.2",

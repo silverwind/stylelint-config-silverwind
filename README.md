@@ -9,13 +9,18 @@
 pnpm add -D stylelint-config-silverwind
 ```
 
-In `stylelint.config.js`:
+In `stylelint.config.ts`:
 
-```js
-/** @type {import("stylelint").Config} */
-export default {
-  extends: "stylelint-config-silverwind",
-};
+```ts
+import {base} from "stylelint-config-silverwind";
+
+export default base({
+  referenceFiles: ["src/vars.css"],
+});
 ```
+
+`base` spreads top-level stylelint options over the defaults and merges `rules`.
+
+Setting `referenceFiles` enables the `no-unknown-animations`, `no-unknown-custom-media` and `no-unknown-custom-properties` rules, which check usages against the files that define them.
 
 © [silverwind](https://github.com/silverwind), distributed under BSD licence

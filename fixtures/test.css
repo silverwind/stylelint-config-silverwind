@@ -4,6 +4,10 @@
   margin:0!important; /* stylelint-disable-line @stylistic/declaration-bang-space-before -- the fixture omits the space on purpose */
 }
 
+:root {
+  --test-size: 1px;
+}
+
 @font-face {
   font-family: x;
   src: url("x.woff2");
