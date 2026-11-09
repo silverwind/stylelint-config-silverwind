@@ -21,6 +21,7 @@ lint-fix: node_modules
 .PHONY: test
 test: node_modules build
 	pnpm exec stylelint -c dist/index.js test.css test.html
+	pnpm exec stylelint -c test.config.ts test.css test.html
 
 .PHONY: build
 build: node_modules $(DIST_FILES)

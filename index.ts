@@ -1,12 +1,11 @@
 import declarationStrictValue from "stylelint-declaration-strict-value";
 import declarationBlockNoIgnoredProperties from "stylelint-declaration-block-no-ignored-properties";
-import valueNoUnknownCustomProperties from "stylelint-value-no-unknown-custom-properties";
 import stylistic from "@stylistic/stylelint-plugin";
 import postcssHtml from "postcss-html";
 import recommended from "stylelint-config-recommended";
 import type {Config} from "stylelint";
 
-export default {
+const config = {
   reportUnscopedDisables: true,
   reportNeedlessDisables: true,
   reportInvalidScopeDisables: true,
@@ -14,7 +13,6 @@ export default {
   plugins: [
     declarationStrictValue,
     declarationBlockNoIgnoredProperties,
-    valueNoUnknownCustomProperties,
     stylistic,
   ],
   overrides: [
@@ -36,6 +34,7 @@ export default {
   ],
   rules: {
     ...recommended.rules,
+    "@stylistic/aspect-ratio-notation": null,
     "@stylistic/at-rule-name-case": null,
     "@stylistic/at-rule-name-newline-after": null,
     "@stylistic/at-rule-name-space-after": null,
@@ -57,6 +56,7 @@ export default {
     "@stylistic/declaration-block-semicolon-newline-before": null,
     "@stylistic/declaration-block-semicolon-space-after": null,
     "@stylistic/declaration-block-semicolon-space-before": "never",
+    "@stylistic/declaration-block-single-line-max-declarations": null,
     "@stylistic/declaration-block-trailing-semicolon": null,
     "@stylistic/declaration-colon-newline-after": null,
     "@stylistic/declaration-colon-space-after": null,
@@ -116,6 +116,8 @@ export default {
     "@stylistic/value-list-comma-space-after": null,
     "@stylistic/value-list-comma-space-before": null,
     "@stylistic/value-list-max-empty-lines": 0,
+    "@stylistic/value-slash-newline-after": null,
+    "@stylistic/value-slash-newline-before": null,
     "@stylistic/value-slash-space-after": "always",
     "@stylistic/value-slash-space-before": "always",
     "at-rule-no-deprecated": true,
@@ -146,15 +148,14 @@ export default {
     "no-empty-source": null,
     "no-invalid-double-slash-comments": true,
     "no-invalid-position-at-import-rule": [true, {ignoreAtRules: ["tailwind"]}],
-    "no-unknown-animations": null, // disabled until multi-file linting works
-    "no-unknown-custom-media": null, // disabled until multi-file linting works
-    "no-unknown-custom-properties": null, // disabled until multi-file linting works
+    "no-unknown-animations": null, // enabled by base() when referenceFiles is set
+    "no-unknown-custom-media": null, // enabled by base() when referenceFiles is set
+    "no-unknown-custom-properties": null, // enabled by base() when referenceFiles is set
     "plugin/declaration-block-no-ignored-properties": true,
     "property-no-deprecated": true,
     "property-no-vendor-prefix": [true, {ignoreProperties: ["/-text-size-adjust$/"]}], // no unprefixed support in Safari or Firefox
     "scale-unlimited/declaration-strict-value": [["/color$/", "fill", "stroke"], {ignoreValues: "/^(inherit|transparent|unset|initial|currentcolor|none)$/", ignoreAtRules: ["@font-face", "@page"], ignoreFunctions: true, disableFix: true, expandShorthand: true}],
     "selector-attribute-quotes": "always",
-    "selector-no-deprecated": null, // matches in-use elements like "tt"
     "selector-no-unmatchable": true,
     "selector-no-vendor-prefix": true,
     "selector-type-case": "lower",
@@ -164,3 +165,21 @@ export default {
     "value-no-vendor-prefix": [true, {ignoreValues: ["box", "inline-box"]}],
   },
 } satisfies Config as Config; // prevent TS2883 caused by postcss being a transitive dependency
+
+export default config;
+
+export function base({rules, ...other}: Config = {}): Config {
+  return {
+    ...config,
+    ...other,
+    rules: {
+      ...config.rules,
+      ...(other.referenceFiles && {
+        "no-unknown-animations": true,
+        "no-unknown-custom-media": true,
+        "no-unknown-custom-properties": true,
+      }),
+      ...rules,
+    },
+  };
+}
