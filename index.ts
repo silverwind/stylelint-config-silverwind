@@ -18,7 +18,7 @@ const config = {
   overrides: [
     {files: ["**/*.html"], customSyntax: postcssHtml},
   ],
-  ignoreFiles: [ // effective only through base(), extends resolves them against this package's dir
+  ignoreFiles: [
     "**/.air/**",
     "**/.claude/**",
     "**/.git/**",
@@ -164,16 +164,14 @@ const config = {
     "unit-no-unknown": true,
     "value-no-vendor-prefix": [true, {ignoreValues: ["box", "inline-box"]}],
   },
-} satisfies Config as Config; // prevent TS2883 caused by postcss being a transitive dependency
-
-export default config;
+} satisfies Config;
 
 export function base({plugins = [], overrides = [], rules, ...other}: Config = {}): Config { // merges like extends
   return {
     ...config,
     ...other,
-    plugins: [config.plugins!, plugins].flat(),
-    overrides: [...config.overrides!, ...overrides],
+    plugins: [config.plugins, plugins].flat(),
+    overrides: [...config.overrides, ...overrides],
     rules: {
       ...config.rules,
       ...(other.referenceFiles && {
