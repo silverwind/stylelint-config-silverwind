@@ -9,9 +9,9 @@
 pnpm add -D stylelint-config-silverwind
 ```
 
-In `stylelint.config.js`:
+In `stylelint.config.ts`:
 
-```js
+```ts
 import {base} from "stylelint-config-silverwind";
 
 export default base({

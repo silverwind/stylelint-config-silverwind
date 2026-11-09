@@ -1,3 +1,3 @@
-import {base} from "./index.ts";
+import {base} from "../dist/index.js";
 
 export default base({referenceFiles: "test.css"});

@@ -18,7 +18,7 @@ const config = {
   overrides: [
     {files: ["**/*.html"], customSyntax: postcssHtml},
   ],
-  ignoreFiles: [ // TODO: ineffective when loaded by name or path, stylelint then resolves them against this config's dir
+  ignoreFiles: [ // effective only through base(), extends resolves them against this package's dir
     "**/.air/**",
     "**/.claude/**",
     "**/.git/**",
@@ -168,10 +168,12 @@ const config = {
 
 export default config;
 
-export function base({rules, ...other}: Config = {}): Config {
+export function base({plugins = [], overrides = [], rules, ...other}: Config = {}): Config { // merges like extends
   return {
     ...config,
     ...other,
+    plugins: [config.plugins!, plugins].flat(),
+    overrides: [...config.overrides!, ...overrides],
     rules: {
       ...config.rules,
       ...(other.referenceFiles && {
