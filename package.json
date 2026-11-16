@@ -15,19 +15,19 @@
   "files": [
     "dist"
   ],
-  "packageManager": "pnpm@12.18.0",
+  "packageManager": "pnpm@12.21.0",
   "peerDependencies": {
     "stylelint": ">=18"
   },
   "devDependencies": {
     "@stylistic/stylelint-plugin": "6.0.1",
-    "eslint": "10.14.0",
-    "eslint-config-silverwind": "157.0.2",
-    "postcss-html": "2.0.0",
+    "eslint": "10.15.0",
+    "eslint-config-silverwind": "158.0.0",
+    "postcss-html": "2.0.1",
     "stylelint": "18.0.0",
     "stylelint-config-recommended": "19.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "3.0.0",
-    "stylelint-declaration-strict-value": "1.12.1",
+    "stylelint-declaration-block-no-ignored-properties": "3.1.0",
+    "stylelint-declaration-strict-value": "1.13.0",
     "tsdown": "0.23.7",
     "tsdown-config-silverwind": "5.0.0",
     "typescript": "7.0.2",
