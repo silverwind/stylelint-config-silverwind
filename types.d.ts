@@ -8,8 +8,3 @@ declare module "@stylistic/stylelint-plugin" {
   const plugin: Plugin;
   export = plugin;
 }
-declare module "stylelint-config-recommended" {
-  import type {Config} from "stylelint";
-  const config: Config;
-  export default config;
-}
