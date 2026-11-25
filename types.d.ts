@@ -3,8 +3,3 @@ declare module "stylelint-declaration-block-no-ignored-properties" {
   const plugin: Plugin;
   export = plugin;
 }
-declare module "@stylistic/stylelint-plugin" {
-  import type {Plugin} from "stylelint";
-  const plugin: Plugin;
-  export = plugin;
-}

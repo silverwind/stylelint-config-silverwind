@@ -13,7 +13,7 @@ const config = {
   plugins: [
     declarationStrictValue,
     declarationBlockNoIgnoredProperties,
-    stylistic,
+    ...stylistic,
   ],
   overrides: [
     {files: ["**/*.html"], customSyntax: postcssHtml},
